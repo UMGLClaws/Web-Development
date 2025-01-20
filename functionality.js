@@ -1,3 +1,4 @@
-function testFunction() {
-    document.getElementById("demo").innerHTML = "Hello World!";
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("darkMode");
 }

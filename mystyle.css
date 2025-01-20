@@ -1,5 +1,6 @@
 body {
     font-family: JetBrains Mono, monospace;
+    color : #111827;
     background-color: #e5e7eb;
 }
 
@@ -32,6 +33,11 @@ a {
 
 main {
     padding: 2rem;
+}
+
+.darkMode {
+    background-color: #111827;
+    color: #e5e7eb;
 }
 
 footer {
