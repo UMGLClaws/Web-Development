@@ -1,7 +1,7 @@
 body {
     font-family: JetBrains Mono, monospace;
-    color : #111827;
-    background-color: #e5e7eb;
+    color: #22223b; /* Dark Blue */
+    background-color: #f2e9e4; /* Light Beige */
 }
 
 header {
@@ -10,18 +10,18 @@ header {
     text-align: center;
 }
 
-h1{
-    font-family:  JetBrains Mono, monospace;
-    background-color: #111827;    ;
-    color: #e5e7eb;
+h1 {
+    font-family: JetBrains Mono, monospace;
+    background-color: #22223b; /* Dark Blue */
+    color: #f2e9e4; /* Light Beige */
     padding: 1rem;
     text-align: center;
 }
 
 h2 {
-    font-family:  JetBrains Mono, monospace;
-    background-color: #111827;    ;
-    color: #e5e7eb;
+    font-family: JetBrains Mono, monospace;
+    background-color: #22223b; /* Dark Blue */
+    color: #f2e9e4; /* Light Beige */
     padding: 1rem;
     text-align: center;
 }
@@ -29,22 +29,37 @@ h2 {
 a {
     padding: .5em;
     line-height: 2rem;
+    color: #4a4e69; /* Medium Blue */
 }
 
 main {
     padding: 2rem;
 }
 
-.darkMode {
-    background-color: #111827;
-    color: #e5e7eb;
+.dark-mode, .dark-mode a {
+    background-color: #22223b; /* Dark Blue */
+    color: #f2e9e4; /* Light Beige */
+}
+
+.dark-mode h1, .dark-mode h2  {
+    background-color: #4a4e69; /* Medium Blue */
+    color: #f2e9e4; /* Light Beige */
 }
 
 footer {
-    background-color: #111827;
-    color: #e5e7eb;
+    background-color: #22223b; /* Dark Blue */
+    color: #f2e9e4; /* Light Beige */
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.button1 {
+    background-color: #060613; /* Dark Blue */
+    color: #f2e9e4; /* Light Beige */
+    padding: 1em;
+    line-height: 2rem;
+    border: 1em;
+    cursor: pointer;
 }
