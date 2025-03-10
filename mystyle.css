@@ -2,12 +2,13 @@ body {
     font-family: JetBrains Mono, monospace;
     color: #22223b; /* Dark Blue */
     background-color: #f2e9e4; /* Light Beige */
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-header {
-    font-family: JetBrains Mono, monospace;
-    font-size: 18px;
-    text-align: center;
+header, footer {
+    display: none;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
     background-color: #22223b; /* Dark Blue */
     color: #f2e9e4; /* Light Beige */
     padding: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
@@ -41,25 +42,77 @@ main {
     color: #f2e9e4; /* Light Beige */
 }
 
-.dark-mode h1, .dark-mode h2  {
-    background-color: #4a4e69; /* Medium Blue */
-    color: #f2e9e4; /* Light Beige */
+.dark-mode h1, .dark-mode h2 ,.dark-mode .sidenav a, .dark-mode .sidenav {
+    background-color: #393b4d; 
+    color: #f2e9e4; 
 }
 
 footer {
-    background-color: #22223b; /* Dark Blue */
-    color: #f2e9e4; /* Light Beige */
+    background-color: #22223b; 
+    color: #f2e9e4; 
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-.button1 {
-    background-color: #060613; /* Dark Blue */
-    color: #f2e9e4; /* Light Beige */
-    padding: 1em;
-    line-height: 2rem;
-    border: 1em;
-    cursor: pointer;
+button {
+    background-color: #000201; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 265px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #22223b; 
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000201;
+    border-right: 3px solid;
+}
+
+.sidenav h1 {
+    color: #f2e9e4; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidenav a, .sidenav p {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f2e9e4; 
+    display: block;
+    text-align: center;
+}
+
+.sidenav button {
+    background-color: #161313; 
+    border: 2px solid #f2e9e4; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.main-content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
 }
